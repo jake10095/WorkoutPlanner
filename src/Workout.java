@@ -6,6 +6,7 @@ public class Workout {
     // True means Push
     // False means Pull
     private boolean movement;
+    private boolean alwaysUsed;
     private String name;
     private int type;
     private int repMin;
@@ -30,6 +31,17 @@ public class Workout {
         this.repMax = repMax;
     }
 
+    public void Workout(boolean compound, boolean movement, String name, int type, int repMin, int repMax
+            , boolean alwaysUsed) {
+        this.compound = compound;
+        this.movement = movement;
+        this.name = name;
+        this.type = type;
+        this.repMin = repMin;
+        this.repMax = repMax;
+        this.alwaysUsed = alwaysUsed;
+    }
+
     public boolean isCompound() {
         return compound;
     }
@@ -51,6 +63,8 @@ public class Workout {
     }
 
     public boolean getMovement() {return movement;}
+
+    public boolean getAlwaysUsed() {return alwaysUsed;}
 
     public String getReps() {
         SetRepCalc getter = new SetRepCalc(this.repMin, this.repMax, this.compound);

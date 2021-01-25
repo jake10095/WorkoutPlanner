@@ -193,9 +193,32 @@ public class WorkoutList {
         ROW_CABLE.Workout(false, false, "Cable Row", 3, 8, 14);
         SHRUG.Workout(false, false, "Barbell Shrugs", 3, 8, 10);
         INV_FLY.Workout(false, false, "Inverse Fly's", 3, 8, 12);
-        PULL_UP.Workout(true, false, "Pullup", 3, 6, 10);
+        PULL_UP.Workout(true, false, "Pull-up", 3, 6, 10);
 
         // Bicep 4
         TWENTY_ONES.Workout(false, false, "Twenty-Ones", 4, 3,3);
+        PREACHER_DB.Workout(false, false, "Dumbbell Preacher Curl", 4, 8,12);
+        HAMMER_CURL.Workout(false,false,"Hammer Curl", 4,8,12);
+        CABLE_CURL.Workout(false, false, "Cable Curls", 4, 8,12);
+        CURL_DB.Workout(false,false,"Dumbbell Curl",4, 8,12);
+        CURL_BB.Workout(false,false,"Barbell Curl",4, 8,12);
+        CURL_CLOSE_GRIP.Workout(false,false,"Barbell Close Grip Curl", 4, 8,12);
+        CURL_WIDE_GRIP.Workout(false,false,"Barbell Wide Grip Curl", 4, 8,12);
+
+        // Legs 5
+        SQUAT.Workout(true,true,"Squat",5,3,8);
+        LEG_EXTENSIONS.Workout(false,true,"Leg Extension Machine", 5, 8,12);
+        LEG_PRESS.Workout(false,true,"Leg Press", 5,8,10);
+        CALVE_RAISES_BB.Workout(false,true,"Barbell Calve Raises", 5, 15,20);
+        CALVE_MACHINE.Workout(false,true,"Calve Machine", 5, 15,20);
+        HAMSTRING_MACHINE.Workout(false,false,"Hamstring Machine", 5,10,15,true);
+
+        // Core 6
+        SIT_UP.Workout(false,false,"Sit-ups",6,15,20);
+        PLANK.Workout(false,false,"Plank",6,60,60);
+        SIDE_TO_SIDE.Workout(false,false,"Side to Side",6,15,20);
+        REVERSE_CRUNCH.Workout(false,false,"Reverse Crunch",6,10,15);
+        REVERSE_DIP.Workout(false,false,"Reverse Dip",6,8,10);
+        LEG_RAISES.Workout(false,false,"Leg Raises",6,10,15);
     }
 }
