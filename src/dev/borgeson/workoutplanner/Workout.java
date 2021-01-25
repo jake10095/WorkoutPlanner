@@ -1,3 +1,5 @@
+package dev.borgeson.workoutplanner;
+
 import java.util.Arrays;
 
 public class Workout {

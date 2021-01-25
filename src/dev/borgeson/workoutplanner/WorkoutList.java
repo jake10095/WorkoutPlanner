@@ -1,3 +1,5 @@
+package dev.borgeson.workoutplanner;
+
 public class WorkoutList {
     // Chest
     private static final Workout BENCHPRESS_BB = new Workout();
@@ -75,7 +77,7 @@ public class WorkoutList {
 
 //    private String workouts{
 //        String result = "error";
-//        BENCHPRESS.Workout(true, true, "Bench Press", 0, 3, 5);
+//        BENCHPRESS.dev.borgeson.workoutplanner.Workout(true, true, "Bench Press", 0, 3, 5);
 //
 //        // TODO use user input to output specified workout
 //        if () {}

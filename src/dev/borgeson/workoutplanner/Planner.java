@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package dev.borgeson.workoutplanner;
 
 public class Planner {
     public static void main (String[] args) {

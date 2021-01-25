@@ -1,3 +1,5 @@
+package dev.borgeson.workoutplanner;
+
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 

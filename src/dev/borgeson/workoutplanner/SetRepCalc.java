@@ -1,3 +1,5 @@
+package dev.borgeson.workoutplanner;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class SetRepCalc {
