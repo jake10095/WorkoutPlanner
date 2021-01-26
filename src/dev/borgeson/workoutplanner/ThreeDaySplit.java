@@ -144,10 +144,15 @@ public class ThreeDaySplit {
         }
         return result;
     }
-    private void arrayToString(String[] input) {
+    private String arrayToString(String[] input) {
+        String result = "";
+        StringBuilder built = new StringBuilder();
+
         for(int i = 0; i < input.length; i++) {
-            System.out.println("\t" +input[i]);
+            built.append("" + input[i].toString() + "\n");
+//            result.concat("\t" + input[i].toString() + "\n");
         }
+        return built.toString();
     }
 
     /**
@@ -155,21 +160,29 @@ public class ThreeDaySplit {
      */
     public void getWorkoutPlan() {
         System.out.println("Your Plan\n Day One:");
-        arrayToString(dayOne());
+        System.out.println(arrayToString(dayOne()));
 
         System.out.println(" Day Two:");
-        arrayToString(dayTwo());
+        System.out.println(arrayToString(dayTwo()));
 
         System.out.println(" Day Three:");
-        arrayToString(dayThree());
+        System.out.println(arrayToString(dayThree()));
 
         System.out.println(" Day Four:");
-        arrayToString(dayFour());
+        System.out.println(arrayToString(dayFour()));
 
         System.out.println(" Day Five:");
-        arrayToString(dayFive());
+        System.out.println(arrayToString(dayFive()));
 
         System.out.println(" Day Six:");
-        arrayToString(daySix());
+        System.out.println(arrayToString(daySix()));
+    }
+
+    public String asString() {
+        String result = "Your Plan:\nDay One:\n" + arrayToString(dayOne()) + "\nDay Two:\n" + arrayToString(dayTwo())
+                + "\nDay Three:\n" + arrayToString(dayThree()) + "\nDay Four:\n" + arrayToString(dayFour()) + "\nDay Five:\n"
+                + arrayToString(dayFive()) + "\nDay Six:\n" + arrayToString(daySix());
+
+        return result;
     }
 }
