@@ -40,7 +40,6 @@ public class WorkoutList {
     private static final Workout ROW_BB = new Workout();
     private static final Workout SHRUG = new Workout();
     private static final Workout INV_FLY = new Workout();
-    private static final Workout PULL_UP = new Workout();
 
     // Biceps
     private static final Workout TWENTY_ONES = new Workout();
@@ -101,47 +100,40 @@ public class WorkoutList {
 
     // Returns list of back workouts in order of if compound or not
     public String[] getBackWorkouts() {
-        String[] workouts = {DL.getName(), SLDL.getName(), ROW_BB.getName(), PULL_UP.getName(), LAT_PULL_CLOSE.getName()
+        return new String[]{DL.getName(), SLDL.getName(), ROW_BB.getName(), LAT_PULL_CLOSE.getName()
                 , LAT_PULL_WIDE.getName(), ROW_CABLE.getName(), SHRUG.getName(), INV_FLY.getName()};
-        return workouts;
     }
 
     public String[] getBicepWorkouts() {
-        String[] workouts = {TWENTY_ONES.getName(), PREACHER_DB.getName(), HAMMER_CURL.getName(), CABLE_CURL.getName()
+        return new String[]{TWENTY_ONES.getName(), PREACHER_DB.getName(), HAMMER_CURL.getName(), CABLE_CURL.getName()
                 , CURL_DB.getName(), CURL_BB.getName(), CURL_WIDE_GRIP.getName(), CURL_CLOSE_GRIP.getName()};
-        return workouts;
     }
 
     public String[] getChestWorkouts() {
-        String[] workouts = {BENCHPRESS_BB.getName(), INCLINE_BB.getName(), DECLINE_BB.getName(), FLY_LTH.getName()
+        return new String[]{BENCHPRESS_BB.getName(), INCLINE_BB.getName(), DECLINE_BB.getName(), FLY_LTH.getName()
                 , FLY_HTL.getName(), FLY_CABLE.getName(), BENCHPRESS_DB.getName(), INCLINE_DB.getName()
                 , PLATE_PRESS.getName(), FLY_DB.getName()};
-        return workouts;
     }
 
     public String[] getTricepWorkouts() {
-        String[] workouts = {DIPS.getName(), SKULL_BB.getName(), OH_EXTENSIONS_DB.getName()
+        return new String[]{DIPS.getName(), SKULL_BB.getName(), OH_EXTENSIONS_DB.getName()
                 , ARM_EXTENSION_CABLE.getName(), OH_EXTENSIONS_CABLE.getName(), SKULL_DB.getName()
                 , CABLE_EXTENSIONS_HTL.getName()};
-        return workouts;
     }
 
     public String[] getShoulderWorkouts() {
-        String[] workouts = {OHP.getName(), VERT_FLY.getName(), SHOULDER_MACHINE.getName(), ARNOLD.getName()
+        return new String[]{OHP.getName(), VERT_FLY.getName(), SHOULDER_MACHINE.getName(), ARNOLD.getName()
                 , SHOULDER_PRESS_DB.getName(), VERT_FRONT_RAISES.getName(), LANDMINE_PRESS.getName()};
-        return workouts;
     }
 
     public String[] getLegWorkouts() {
-        String[] workouts = {SQUAT.getName(), LEG_EXTENSIONS.getName(), LEG_PRESS.getName(), CALVE_RAISES_BB.getName()
+        return new String[]{SQUAT.getName(), LEG_EXTENSIONS.getName(), LEG_PRESS.getName(), CALVE_RAISES_BB.getName()
                 , CALVE_MACHINE.getName(), HAMSTRING_MACHINE.getName(), PAUSE_SQUAT.getName()};
-        return workouts;
     }
 
     public String[] getCoreWorkouts() {
-        String[] workouts = {SIT_UP.getName(), PLANK.getName(), SIDE_TO_SIDE.getName(), REVERSE_DIP.getName()
+        return new String[]{SIT_UP.getName(), PLANK.getName(), SIDE_TO_SIDE.getName(), REVERSE_DIP.getName()
                 , REVERSE_CRUNCH.getName(), LEG_RAISES.getName()};
-        return workouts;
     }
     /*
      * Type: Relates to which body part
@@ -195,7 +187,6 @@ public class WorkoutList {
         ROW_CABLE.Workout(false, false, "Cable Row", 3, 8, 14);
         SHRUG.Workout(false, false, "Barbell Shrugs", 3, 8, 10);
         INV_FLY.Workout(false, false, "Inverse Fly's", 3, 8, 12);
-        PULL_UP.Workout(true, false, "Pull-up", 3, 6, 10);
 
         // Bicep 4
         TWENTY_ONES.Workout(false, false, "Twenty-Ones", 4, 3,3);
